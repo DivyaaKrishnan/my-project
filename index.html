@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tour Booking Page</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>ExploreMyTrips</h1>
+    <nav>
+      <a href="home.html">HOME</a>
+      <a href="destinations1.html">DESTINATIONS</a>
+      <a href="about.html">ABOUT</a>
+      <a href="contact1.html">CONTACT</a>
+    </nav>
+  </header>
+  <section class="booking-section">
+    <h2>Book Your Tour</h2>
+    <form id="bookingForm">
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="destination">Destination:</label>
+        <select id="destination" name="destination" required>
+          <option value="">-- Select --</option>
+          <option value="paris">Paris</option>
+          <option value="bali">Bali</option>
+          <option value="tokyo">Tokyo</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="date">Travel Date:</label>
+        <input type="date" id="date" name="date" required />
+      </div>
+      <div class="form-group">
+        <label for="people">Number of People:</label>
+        <input type="number" id="people" name="people" min="1" value="1" required />
+      </div>
+      <button type="submit">Book Now</button>
+    </form>
+    <div id="message"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ExploreMyTrips. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
